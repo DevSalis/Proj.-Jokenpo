@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    background: url("https://source.unsplash.com/1600x900/?landscape");
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    background-color: blueviolet;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   border-radius: 10px;
+}
