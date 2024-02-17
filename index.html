@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <script src="./scripts.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -7,19 +8,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jokenpo</title>
 </head>
+
 <body>
+
+    <video autoplay muted loop id="background-video">
+        <source src="./assets/backgrund jokenpo desktop.mp4" type="video/mp4">
+    </video>
+
     <main>
         <section>
-            <h1>JOKENPO</h1>
-            <div class="icones">
-                <img id="pedra" src="" alt="Pedra">
-                <img id="papel" src="" alt="Pedra">
-                <img id="tesoura" src="" alt="Pedra">
+            <div class="title">
+                <h1>JOKENP</h1>
+                <img id="logo" src="./assets/pedra-papel-tesoura.png" alt="logo-pedra-papel-tesoura">
             </div>
-            <p id="result"></p>
-            <h2>Jogador<samp id="player">0</samp></h2>
-            <h2>Maquina<samp id="com">0</samp></h2>
+
+            <div class="icones">
+                <button id="pedra">&#x270A;</button>
+                <button id="papel">&#x1F590;</button>
+                <button id="tesoura">&#x270C;</button>
+            </div>
+
+            <p></p>
+
+            <div class="jogadores">
+                <h2>Jogador <span id="player">0</span></h2>
+                <h2>Maquina <span id="com">0</span></h2>
+            </div>
+
         </section>
     </main>
 </body>
+
 </html>

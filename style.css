@@ -6,16 +6,105 @@
 
 body {
     display: flex;
-    align-items: center;
-    background: url("https://source.unsplash.com/1600x900/?landscape");
     justify-content: center;
     min-height: 100vh;
 }
 
+#background-video {
+    position: fixed;
+    bottom: 0;
+    margin-left: -100px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
 section {
-    background-color: blueviolet;
-   display: flex;
-   flex-direction: column;
-   padding: 10px;
-   border-radius: 10px;
+    background-color: rgb(226, 182, 88);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 20%;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    animation: girar 7s linear infinite;
+}
+
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 100px;
+    color: rgb(73, 4, 185);
+}
+
+.icones {
+    display: flex;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+button {
+    font-size: 90px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacty 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+#pedra {
+    background-color: rgba(0, 255, 242, 0.973);
+}
+#papel {
+    background-color: rgba(113, 230, 90, 0.973);
+}
+#tesoura {
+    background-color: rgba(255, 230, 0, 0.973);
+}
+
+p {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    margin-top: 20%;
+    color: #1d0ef1;
+}
+
+.jogadores {
+    display: flex;
+    margin-top: 80px;
+    gap: 80px;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#player {
+    color: rgb(81, 81, 236);
+}
+
+#com {
+    color: rgba(223, 62, 22, 0.87);
 }
