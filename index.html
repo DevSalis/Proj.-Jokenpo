@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <script src="./scripts.js"></script>
+    
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,20 +23,22 @@
             </div>
 
             <div class="icones">
-                <button id="pedra">&#x270A;</button>
-                <button id="papel">&#x1F590;</button>
-                <button id="tesoura">&#x270C;</button>
+                <button onclick="selectPlayer('Pedra')" id="pedra">&#x270A;</button>
+                <button onclick="selectPlayer('Papel')" id="papel">&#x1F590;</button>
+                <button onclick="selectPlayer('Tesoura')" id="tesoura">&#x270C;</button>
             </div>
 
-            <p></p>
+            <p class="result"></p>
 
             <div class="jogadores">
                 <h2>Jogador <span id="player">0</span></h2>
+                <img id="versos" src="./assets/vs.gif" alt="gif-versos">
+                
                 <h2>Maquina <span id="com">0</span></h2>
             </div>
 
         </section>
     </main>
 </body>
-
+<script src="./scripts.js"></script>
 </html>

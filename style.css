@@ -15,7 +15,7 @@ body {
     bottom: 0;
     margin-left: -100px;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 section {
@@ -69,6 +69,7 @@ button {
 
 button:hover {
     opacity: 0.6;
+    color: rgb(7, 7, 7);
 }
 
 #pedra {
@@ -81,13 +82,13 @@ button:hover {
     background-color: rgba(255, 230, 0, 0.973);
 }
 
-p {
-    font-size: 40px;
+.result {
+    font-size: 30px;
     font-weight: bold;
     display: flex;
     position: absolute;
     margin-top: 20%;
-    color: #1d0ef1;
+    color: #f0f0f7;
 }
 
 .jogadores {
