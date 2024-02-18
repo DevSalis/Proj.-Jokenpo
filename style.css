@@ -82,24 +82,64 @@ button:hover {
     background-color: rgba(255, 230, 0, 0.973);
 }
 
+.placar {
+    position: absolute;
+    margin-top: 20%;
+}
+
+.box-center {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
 .result {
     font-size: 30px;
     font-weight: bold;
     display: flex;
-    position: absolute;
-    margin-top: 20%;
     color: #f0f0f7;
+   
+}
+
+#zerar {
+    width: 90px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(236, 121, 13);
+    color: #ffffff;
 }
 
 .jogadores {
     display: flex;
     margin-top: 80px;
-    gap: 80px;
+    gap: 30px;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+
+.animation-human-result {
+    width: 75px; 
+    margin-left: -10px; 
+}
+
+.animation-vs-result {
+    width: 60px; 
+}
+
+.animation-robo-result {
+    width: 45px;
+    margin-right: 0%;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 21px;
     font-weight: bold;
+    margin-top: 30px;
+    margin-left: -10px;
 }
 
 #player {

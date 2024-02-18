@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    
+
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,17 +28,38 @@
                 <button onclick="selectPlayer('Tesoura')" id="tesoura">&#x270C;</button>
             </div>
 
-            <p class="result"></p>
+            <div class="placar">
+                <div class="jogadas">
+                    <p class="jogadaHumana"></p>
+                </div>
+                <div class="box-center">
+                    <p class="result"></p>
+                    <button id="zerar">Zerar</button>
+                </div>
+                <div class="jogadas">
+                    <p class="jogadaRobo"></p>
+                </div>
+            </div>
+
+
 
             <div class="jogadores">
+                <video autoplay muted loop class="animation-human-result">
+                    <source src="./assets/gif-homem-lutador.mp4" type="video/mp4">
+                </video>
                 <h2>Jogador <span id="player">0</span></h2>
-                <img id="versos" src="./assets/vs.gif" alt="gif-versos">
-                
+                <video autoplay muted loop class="animation-vs-result">
+                    <source src="./assets/video-vs.mp4" type="video/mp4">
+                </video>
                 <h2>Maquina <span id="com">0</span></h2>
+                <video autoplay muted loop class="animation-robo-result">
+                    <source src="./assets/video-robo.mp4" type="video/mp4">
+                </video>
             </div>
 
         </section>
     </main>
 </body>
 <script src="./scripts.js"></script>
+
 </html>
