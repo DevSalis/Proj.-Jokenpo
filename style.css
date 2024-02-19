@@ -25,7 +25,7 @@ section {
     padding: 20px;
     border-radius: 10px;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .title {
@@ -41,10 +41,11 @@ section {
 
 @keyframes girar {
     from {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     to {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -55,12 +56,12 @@ h1 {
 
 .icones {
     display: flex;
-    margin-top: 10px;
+    margin-top: 5px;
     gap: 50px;
 }
 
 button {
-    font-size: 90px;
+    font-size: 80px;
     cursor: pointer;
     border: none;
     border-radius: 10px;
@@ -75,31 +76,42 @@ button:hover {
 #pedra {
     background-color: rgba(0, 255, 242, 0.973);
 }
+
 #papel {
     background-color: rgba(113, 230, 90, 0.973);
 }
+
 #tesoura {
     background-color: rgba(255, 230, 0, 0.973);
 }
 
 .placar {
     position: absolute;
-    margin-top: 20%;
+    margin-top: 18%;
+    display: flex;
+    text-align: center;
+    width: 90%;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
 }
 
 .box-center {
     display: flex;
-    gap: 5px;
+    gap: 10px;
     flex-direction: column;
+    margin-top: 5px;
     align-items: center;
+    text-align: center;
 }
 
 .result {
     font-size: 30px;
     font-weight: bold;
     display: flex;
-    color: #f0f0f7;
-   
+    color: #000000;
+    font-weight: bold;
+
 }
 
 #zerar {
@@ -110,24 +122,27 @@ button:hover {
     color: #ffffff;
 }
 
+.jogadas {
+    font-size: 45px;
+}
+
 .jogadores {
     display: flex;
-    margin-top: 80px;
     gap: 30px;
     background-color: #ffffff;
     width: 100%;
     border-radius: 10px;
     justify-content: center;
-    
+margin-top: 20%;
 }
 
 .animation-human-result {
-    width: 75px; 
-    margin-left: -10px; 
+    width: 75px;
+    margin-left: -10px;
 }
 
 .animation-vs-result {
-    width: 60px; 
+    width: 60px;
 }
 
 .animation-robo-result {
