@@ -15,6 +15,10 @@
         <source src="./assets/backgrund jokenpo desktop.mp4" type="video/mp4">
     </video>
 
+    <video autoplay muted loop id="background-video-mobile">
+        <source src="./assets/backgrund jokenpo mobile.mp4" type="video/mp4">
+    </video>
+
     <main>
         <section>
             <div class="title">
@@ -44,17 +48,24 @@
             </div>
 
             <div class="jogadores">
-                <video autoplay muted loop class="animation-human-result">
-                    <source src="./assets/gif-homem-lutador.mp4" type="video/mp4">
-                </video>
-                <h2>Jogador <span id="player">0</span></h2>
+                <div class="contener01">
+                    <video autoplay muted loop class="animation-human-result">
+                        <source src="./assets/gif-homem-lutador.mp4" type="video/mp4">
+                    </video>
+                    <h2>Jogador <span id="player">0</span></h2>
+                </div>
+                
                 <video autoplay muted loop class="animation-vs-result">
                     <source src="./assets/video-vs.mp4" type="video/mp4">
                 </video>
-                <h2>Maquina <span id="com">0</span></h2>
-                <video autoplay muted loop class="animation-robo-result">
-                    <source src="./assets/video-robo.mp4" type="video/mp4">
-                </video>
+
+                <div class="contener02">
+                    <h2>Maquina <span id="com">0</span></h2>
+                    <video autoplay muted loop class="animation-robo-result">
+                        <source src="./assets/video-robo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
             </div>
 
         </section>
