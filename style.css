@@ -134,7 +134,7 @@ button:hover {
 
 .jogadores {
     display: flex;
-    gap: 30px;
+    gap: 10%;
     background-color: #ffffff;
     width: 100%;
     border-radius: 10px;
