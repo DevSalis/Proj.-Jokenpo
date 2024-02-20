@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-#background-video-mobile {
-    display: none;
-}
-
-
 body {
     display: flex;
     justify-content: center;
@@ -117,7 +112,6 @@ button:hover {
     display: flex;
     color: #000000;
     font-weight: bold;
-
 }
 
 #zerar {
@@ -134,7 +128,7 @@ button:hover {
 
 .jogadores {
     display: flex;
-    gap: 30px;
+    gap: 10%;
     background-color: #ffffff;
     width: 100%;
     border-radius: 10px;
@@ -144,6 +138,10 @@ button:hover {
 
 .contener01 {
     display: flex;
+}
+
+#paragrafoX {
+    display: none;
 }
 
 .contener02 {
@@ -179,6 +177,10 @@ h2 {
     color: rgba(223, 62, 22, 0.87);
 }
 
+.avatar {
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
 
     body {
@@ -187,17 +189,18 @@ h2 {
         min-height: 100vh;
     }
 
-    #background-video {
-        display: none;
+    section {
+        background-color: rgb(226, 182, 88);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        margin-top: 2%;
     }
 
-    #background-video-mobile {
-        position: fixed;
-        bottom: 0;
-        z-index: -1;
-        opacity: 0.6;
-        height: 100%;
-        display: flex;
+    #background-video {
+        display: none;
     }
 
     .title {
@@ -205,7 +208,6 @@ h2 {
         text-align: center;
         justify-content: center;
         align-items: center;
-
     }
 
     h1 {
@@ -231,53 +233,70 @@ h2 {
         justify-content: center;
     }
 
+    .result {
+        font-size: 30px;
+        font-weight: bold;
+        display: flex;
+        color: #000000;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+
+    #zerar {
+        width: 90px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: rgb(236, 121, 13);
+        color: #ffffff;
+        margin-top: 5px;
+    }
+
     .jogadores { 
         display: flex;
-        gap: 5px;
+        gap: 10%;
         background-color: #ffffff;
         border-radius: 10px;
         justify-content: center;
-        margin-top: 25%;
+        margin-top: 30%;
         padding: 5px;
-       
     }
 
    .contener01 {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
    }
+
+   #paragrafoX {
+    display: flex;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 12px;
+    color: rgb(236, 121, 13);
+    font-weight: bold;
+}
 
    .contener02 {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    
-    
    }
+
     .animation-human-result {
-        width: 150px;
-        margin-top: 1px;
-        margin-left: 1px;
-        
+       display: none; 
     }
     
     .animation-vs-result {
-        width: 60px;
-        margin-right: 15px;
+        display: none; 
     }
     
     .animation-robo-result {
-        width: 100px;
-       
+        display: none; 
     }
     
     h2 {
-        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 32px;
         font-weight: bold;
         margin-top: 10px;
+        text-align: center;
     }
     
     #player {
