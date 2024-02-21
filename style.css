@@ -10,12 +10,21 @@ body {
     min-height: 100vh;
 }
 
+main {
+    padding: 0;
+    display: block;
+}
+
 #background-video {
     position: fixed;
     bottom: 0;
     margin-left: -100px;
     z-index: -1;
     opacity: 0.6;
+}
+
+.title-responsivo {
+    display: none;
 }
 
 section {
@@ -187,6 +196,8 @@ h2 {
         display: flex;
         justify-content: center;
         min-height: 100vh;
+        flex-direction: column;
+        padding: 0;
     }
 
     section {
@@ -194,9 +205,10 @@ h2 {
         display: flex;
         flex-direction: column;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 0;
         align-items: center;
-        margin-top: 2%;
+        position: relative;
+        margin-top: 0;
     }
 
     #background-video {
@@ -204,10 +216,15 @@ h2 {
     }
 
     .title {
+        display: none;
+    }
+
+    .title-responsivo {
         display: flex;
-        text-align: center;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to bottom, rgb(236, 121, 13), rgb(226, 182, 88));
+        padding: 20px;
     }
 
     h1 {
@@ -222,9 +239,15 @@ h2 {
         animation: girar 7s linear infinite;
     }
 
+    .icones {
+        display: flex;
+        margin-top: 10px;
+        gap: 50px;
+    }
+
     .placar {
-        position: absolute;
-        margin-top: 44%;
+        position: relative;
+        margin-top: 5%;
         display: flex;
         text-align: center;
         width: 90%;
@@ -239,57 +262,59 @@ h2 {
         display: flex;
         color: #000000;
         font-weight: bold;
-        margin-top: 25px;
-    }
-
-    #zerar {
-        width: 90px;
-        font-size: 20px;
-        border-radius: 5px;
-        background-color: rgb(236, 121, 13);
-        color: #ffffff;
         margin-top: 5px;
     }
 
-    .jogadores { 
+    #zerar {
+        width: 100px;
+        font-size: 20px;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .jogadores {
         display: flex;
         gap: 10%;
         background-color: #ffffff;
         border-radius: 10px;
         justify-content: center;
-        margin-top: 30%;
+        margin-top: 10%;
+        margin-bottom: 5%;
         padding: 5px;
     }
 
-   .contener01 {
-    display: flex;
-   }
+    .contener01 {
+        display: flex;
+    }
 
-   #paragrafoX {
-    display: flex;
-    font-size: 45px;
-    text-align: center;
-    margin-top: 12px;
-    color: rgb(236, 121, 13);
-    font-weight: bold;
-}
+    #paragrafoX {
+        display: flex;
+        font-size: 45px;
+        text-align: center;
+        margin-top: 12px;
+        color: rgb(236, 121, 13);
+        font-weight: bold;
+    }
 
-   .contener02 {
-    display: flex;
-   }
+    .contener02 {
+        display: flex;
+    }
 
     .animation-human-result {
-       display: none; 
+        display: none;
     }
-    
+
     .animation-vs-result {
-        display: none; 
+        display: none;
     }
-    
+
     .animation-robo-result {
-        display: none; 
+        display: none;
     }
-    
+
     h2 {
         display: flex;
         flex-direction: column;
@@ -298,13 +323,42 @@ h2 {
         margin-top: 10px;
         text-align: center;
     }
-    
+
     #player {
         color: rgb(81, 81, 236);
+        font-size: 70px;
     }
-    
+
     #com {
         color: rgba(223, 62, 22, 0.87);
-    } 
-    
+        font-size: 70px;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        gap: 1%;
+        margin-top: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .avatar-humano {
+        display: flex;
+        height: 315px;
+    }
+
+    .vs-responsivo {
+        position: absolute;
+        width: 90px;
+        margin-top: -55px;  
+    }
+
+    .avatar-robo {
+        display: flex;
+        height: 305px;
+       
+    }
+
 }
