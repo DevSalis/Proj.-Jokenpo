@@ -190,17 +190,20 @@ h2 {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
     body {
         display: flex;
-background-color: #ffffff;
-        min-height: none;
         flex-direction: column;
         padding: 0;
-        width: 100%;
+        margin: 0;
+        background-color: aquamarine;
     }
 
+main {
+    margin: 0, 0, 0, 0;
+    padding: 0;
+}
     section {
         background-color: rgb(226, 182, 88);
         display: flex;
@@ -341,22 +344,22 @@ background-color: #ffffff;
         padding: 10px;
         gap: 1%;
         margin-top: 0;
-        background-color: rgb(255, 255, 255);
+        background-color: aquamarine;
     }
 
     .avatar-humano {
         height: 220px;
-        margin-left: -50px;  
+        margin-left: -50px;
     }
 
     .vs-responsivo {
-       margin-left: -50px;
+        margin-left: -50px;
         width: 90px;
         margin-top: -55px;
     }
 
     .avatar-robo {
-        height: 190px;  
+        height: 190px;
     }
 
 }
