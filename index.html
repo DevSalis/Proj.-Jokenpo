@@ -42,6 +42,8 @@
                 <div class="box-center">
                     <p class="result"></p>
                     <button id="zerar">Zerar</button>
+                    <input placeholder="Digite seu nome" type="text">
+                    <button onclick="nameButton()" id="button-name">Confirmar</button>
                 </div>
 
                 <div class="jogadas">
@@ -54,7 +56,7 @@
                     <video autoplay muted loop class="animation-human-result">
                         <source src="./assets/gif-homem-lutador.mp4" type="video/mp4">
                     </video>
-                    <h2>Jogador <span id="player">0</span></h2>
+                    <h2 id="nomeDoJogador">Jogador</h2><span id="player">0</span>
                 </div>
 
                 <video autoplay muted loop class="animation-vs-result">

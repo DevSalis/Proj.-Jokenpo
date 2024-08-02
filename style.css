@@ -131,6 +131,12 @@ button:hover {
     color: #ffffff;
 }
 
+#button-name {
+    width: 120px;
+    font-size: 20px;
+    background-color: rgb(13, 32, 236);
+}
+
 .jogadas {
     font-size: 45px;
 }

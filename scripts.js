@@ -4,6 +4,7 @@ const robo = document.querySelector("#com");
 const resultadoNaTela01 = document.querySelector(".resultNaTela1")
 const resultadoNaTela02 = document.querySelector(".resultNaTela2")
 
+
 let myScore = 0
 let roboScore = 0
 
@@ -19,7 +20,6 @@ function selectCom() {
 }
 
 function start(humano, com) {
-    console.log("Player: " + humano + " COM: " + com);
 
     const icons = {
         'Pedra': '&#x270A;',
@@ -63,5 +63,11 @@ zerarBtn.addEventListener("click", function () {
     resultadoNaTela01.innerHTML = "";
     resultadoNaTela02.innerHTML = "";
 });
+
+function nameButton() {
+    const valueInput = document.querySelector("#nomeDoJogador")
+    const namePlayer = document.querySelector("input").value
+    valueInput.innerHTML = namePlayer
+}
 
 
